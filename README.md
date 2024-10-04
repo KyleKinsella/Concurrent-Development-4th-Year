@@ -1,7 +1,7 @@
 # Concurrent-Development-4th-Year
 
 firstly download my .go code file to your machine.
-To run my code type in the follwing that is below: <br>
+To run my code type in the following that is below: <br>
 go run filename<br>
 change filename to be the actual name of the file.
 
