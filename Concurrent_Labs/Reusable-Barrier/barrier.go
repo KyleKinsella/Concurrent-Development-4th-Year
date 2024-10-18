@@ -37,16 +37,24 @@ import (
 // Place a barrier in this function --use Mutex's and Semaphores
 func doStuff(goNum int, wg *sync.WaitGroup, m *sync.Mutex, sem *semaphore.Weighted, ctx context.Context) bool {//, sem *semaphore.Weighted, ctx context.Context, max int) bool {
 
+	// here I am defering the waitgroup until the end of the method is called 
 	defer wg.Done()
 
 	fmt.Println("Part A",goNum) // all part a's first then all of part b's 
+
+	// here I am looping 2 times to print, a's followed by each iteration then then b's followed by each iteration 
 	for i:=0; i<2; i++ {
+		// here I lock my mutex
 		m.Lock()
+		// here I aquire a context and a value of 1 
 		sem.Acquire(ctx, 1)
+		// here I increment goNum
 		goNum++
 		fmt.Println("Iteration: ", i)
 		time.Sleep(time.Second)
+		// here I unlock my mutex
 		m.Unlock()
+		// then I relase the value of 1 that I previously aquired
 		sem.Release(1)
 	}
 	fmt.Println("PartB:", goNum)
