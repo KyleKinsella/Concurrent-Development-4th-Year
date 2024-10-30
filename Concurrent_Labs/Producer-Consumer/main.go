@@ -1,3 +1,11 @@
+//--------------------------------------------
+// Author: Kyle Kinsella (C00273146@setu.ie)
+// Created on 20/10/24
+// Modified by: Kyle Kinsella - C00273146
+// Issues:
+// Here was no producer or consumer / I have now implemented the producer consumer problem
+//--------------------------------------------
+
 package main
 
 import (
