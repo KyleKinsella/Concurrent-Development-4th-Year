@@ -49,7 +49,7 @@ func main() {
 
 	var mute sync.Mutex
 	ch := make(chan int, 5)
-	threads := 20
+	threads := 1_000_000
 	
 	for i:=0; i<threads; i++ {
 		go producer(&mute, ch)
