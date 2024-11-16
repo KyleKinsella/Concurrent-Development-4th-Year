@@ -1,4 +1,8 @@
-Simple barrier problem
+# Simple barrier Lab
+
+# What is a Simple Barrier?
+### A simple barrier is where we have two or more threads that want to do some work in a particular spot but one thread cannot proceed \n until all other threads/processes reach this barrier.
+
 
 To run my code you must do the following:
 
