@@ -5,10 +5,8 @@
 
 # Below is an example on what the producer - consumer problem looks like:
 buffer = []
-------------------------
 producer puts 0 into the buffer
 buffer is changed to [0]
--------------------------
 consumer takes the 0 out of the buffer 
 buffer is now empty []
 
