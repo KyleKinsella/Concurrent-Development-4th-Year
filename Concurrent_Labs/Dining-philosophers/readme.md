@@ -10,7 +10,7 @@
 ### 4. It must be impossible for a philosopher to starve
 
 # Below is an image of the dining philosophers problem:
-![Screenshot](table of philiosophers.png)
+![Dining Philosophers](images/diningPhi.png)
 
 # How to run my code
 ### To run my code you must do the following:
