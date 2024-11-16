@@ -33,7 +33,6 @@ import (
 	"golang.org/x/sync/semaphore"
 )
 
-
 // Place a barrier in this function --use Mutex's and Semaphores
 func doStuff(goNum int, wg *sync.WaitGroup, m *sync.Mutex, sem *semaphore.Weighted, ctx context.Context) bool {//, sem *semaphore.Weighted, ctx context.Context, max int) bool {
 
@@ -60,7 +59,6 @@ func doStuff(goNum int, wg *sync.WaitGroup, m *sync.Mutex, sem *semaphore.Weight
 	fmt.Println("PartB:", goNum)
 	return true
 }
-
 
 func main() {	
 	// here i get the current local time 
