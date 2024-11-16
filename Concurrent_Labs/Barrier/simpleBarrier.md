@@ -1,17 +1,14 @@
-# Simple barrier Lab
+# Simple barrier Lab 
+## Made by Kyle Kinsella | C00273146
 
 # What is a Simple Barrier?
 ### A simple barrier is where we have two or more threads that want to do some work in a particular spot but one thread cannot proceed until all other threads reach this spot / barrier.
 
 # Below is a diagram on what the simple barrier looks like:
-A A
-___
-
+A A<br>___
 B B 
 
-
 # How to run my code
-
 ### To run my code you must do the following:
 #### Download my go file
 #### Type in: Go run filename, change filename to be the name of the file
