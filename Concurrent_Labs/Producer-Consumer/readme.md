@@ -4,10 +4,10 @@
 ### The producer - consumer problem is where we have a producer put an item into a buffer and consumers take items out of the buffer.
 
 # Below is an example on what the producer - consumer problem looks like:
-buffer = []
-producer puts 0 into the buffer
-buffer is changed to [0]
-consumer takes the 0 out of the buffer 
+buffer = []<br>
+producer puts 0 into the buffer<br>
+buffer is changed to [0]<br>
+consumer takes the 0 out of the buffer<br> 
 buffer is now empty []
 
 # How to run my code
