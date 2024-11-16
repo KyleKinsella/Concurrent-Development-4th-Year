@@ -58,7 +58,6 @@ func doPhilStuff(index int, wg *sync.WaitGroup, leftFork, rightFork *sync.Mutex)
 	}
 }
 
-
 func main() {
 	var wg sync.WaitGroup
 	philCount := 5
@@ -79,6 +78,8 @@ func main() {
 		left := forks[i]
 		// here the right fork is forks[i+1%philCount], this is for the wrap-around for the table
 		right := forks[(i+1)%philCount]
+		// the below if statement ensure that no deadlock occurs, because if true pick upthe right and left fork, otherwise false 
+		// pick up the left and right fork. 
 		if i == philCount-1 {
 			// here we get the right fork then the left fork
 			go doPhilStuff(i, &wg, right, left)
