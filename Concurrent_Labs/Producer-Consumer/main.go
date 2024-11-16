@@ -14,7 +14,6 @@ import (
 	"time"
 )
 
-
 func producer(mute *sync.Mutex, ch chan int) {
 	fmt.Println("The producer is executing.")
 	// here i iterate five times 
@@ -29,14 +28,12 @@ func producer(mute *sync.Mutex, ch chan int) {
 	fmt.Println("The producer is done executing.")
 }
 
-
 func consumer(ch chan int) {
 	// this for loop gets the value(s) that are put into the chanel 
 	for values := range <-ch {
 		fmt.Println("Comsumer has: ", values)
 	}
 }
-
 
 func main() {
 	// here i get the current local time 
@@ -49,7 +46,7 @@ func main() {
 
 	var mute sync.Mutex
 	ch := make(chan int, 5)
-	threads := 1_000_000
+	threads := 20
 	
 	for i:=0; i<threads; i++ {
 		go producer(&mute, ch)
