@@ -33,7 +33,6 @@ import (
 	"golang.org/x/sync/semaphore"
 )
 
-
 // here i have made a function to reduce the duplicated code that i did have in my code
 func do(goNum int, sem *semaphore.Weighted, ctx context.Context, m *sync.Mutex) {
 	m.Lock()
@@ -43,11 +42,9 @@ func do(goNum int, sem *semaphore.Weighted, ctx context.Context, m *sync.Mutex) 
 	defer m.Unlock()
 }
 
-
-
 // Place a barrier in this function --use Mutex's and Semaphores
 func doStuff(goNum int, wg *sync.WaitGroup, m *sync.Mutex, sem *semaphore.Weighted, ctx context.Context, max int) bool {
-
+	
 	// i make a new variable and assign it to the parameters of max
 	maxVal := max
 	fmt.Println("Part A",goNum) // all part a's first then all of part b's 
