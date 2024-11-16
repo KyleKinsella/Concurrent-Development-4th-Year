@@ -9,8 +9,8 @@ B B
 
 # How to run my code
 ### To run my code you must do the following:
-#### Download my go file
-#### Type in: Go run filename, change filename to be the name of the file
+#### 1. Download my go file
+#### 2. Type in: Go run filename, change filename to be the name of the file
 
 # Licensing
 ### All of this work I have completed is licensed with my below license.
