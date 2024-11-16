@@ -1,11 +1,10 @@
-# Simple barrier Lab 
-## Made by Kyle Kinsella | C00273146
+# Simple barrier Lab, Made by Kyle Kinsella | C00273146
 
 # What is a Simple Barrier?
 ### A simple barrier is where we have two or more threads that want to do some work in a particular spot but one thread cannot proceed until all other threads reach this spot / barrier.
 
 # Below is a diagram on what the simple barrier looks like:
-A A<br>___
+A A<br>___<br>
 B B 
 
 # How to run my code
