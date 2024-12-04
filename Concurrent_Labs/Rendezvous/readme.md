@@ -1,14 +1,19 @@
 # Rendezvous Lab, Made by Kyle Kinsella | C00273146
 
 # What a Rendezvous?
-### ........
+### A rendezvous is when we have two threads that must reach a certain point before either can continue.
 
-# Below is an example on what the producer - consumer problem looks like:
-buffer = []<br>
-producer puts 0 into the buffer<br>
-buffer is changed to [0]<br>
-consumer takes the 0 out of the buffer<br> 
-buffer is now empty []
+# Rules
+### 1. Each must signal the other that it has arrived
+### 2. Wait until it gets a signal that its partner has also arrived
+
+# Below is an example on what the rendezvous looks like:
+
+THREAD 2: Starting part one<br>
+THREAD 1: Starting part one<br>
+THREAD 2: Starting part two<br>
+THREAD 1: Starting part two<br>
+
 
 # How to run my code
 ### To run my code you must do the following:
